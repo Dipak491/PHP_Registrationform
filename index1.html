@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Growmore</h1>
+    <h2>Technoline INDIA PVT LTD</h2>
+    <h5>LEARN-EARN-GROW</h5>
+    <h3>Admission Form</h3>
+
+    <form action="submit.php" method="POST">
+
+        <h4>PERSONAL INFORMATION</h4>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+
+        <label for="currentAddress">Current Address:</label>
+        <textarea id="currentAddress" name="currentAddress" required></textarea>
+
+        <label for="permanentAddress">Permanent Address:</label>
+        <textarea id="permanentAddress" name="permanentAddress" required></textarea>
+
+        <label for="status">Status:</label>
+        <select id="status" name="status" required>
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="gender">Gender:</label>
+        <label><input type="radio" id="male" name="gender" value="male"> Male</label>
+        <label><input type="radio" id="female" name="gender" value="female"> Female</label>
+        <label><input type="radio" id="other" name="gender" value="other"> Other</label>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <!-- Add guardian information here -->
+
+        <h4>EDUCATIONAL DETAILS</h4>
+        <!-- Add educational details here -->
+
+        <h4>Payment Details</h4>
+        <!-- Add payment details here -->
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+</div>
+
+<footer>Created By: Dipak</footer>
+</body>
+</html>
